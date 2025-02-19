@@ -1,0 +1,275 @@
+/* Global Variables */
+
+:root {
+    --primary-blue: #3498db;
+    /* Biru cerah */
+    --dark-blue: #2980b9;
+    /* Biru gelap */
+    --light-blue: #d6eaf8;
+    /* Biru muda */
+    --soft-blue: #e6f1f9;
+    /* Biru keabu-abuan lembut */
+    --text-color: #4f5b62;
+    /* Teks gelap */
+    --white: #ffffff;
+    /* Warna putih */
+}
+
+
+/* Global styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--soft-blue);
+    /* Latar belakang netral lembut */
+    color: var(--text-color);
+    /* Warna teks gelap untuk kontras */
+    font-size: 0.9rem;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, var(--white), var(--soft-blue));
+    /* Gradien lembut dengan warna biru muda */
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Bayangan halus untuk kedalaman */
+    border-radius: 15px;
+    border: 2px solid var(--primary-blue);
+    /* Border biru untuk aksen */
+}
+
+
+/* Section title */
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    /* Biru untuk judul bagian */
+    border-bottom: 3px solid var(--dark-blue);
+    /* Biru lebih gelap untuk penekanan */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+/* Photo & text */
+
+.photo-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.photo {
+    flex: 0 0 150px;
+    position: relative;
+}
+
+.photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid var(--primary-blue);
+    /* Border biru sesuai tema */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Bayangan halus */
+}
+
+.text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    /* Teks gelap untuk kontras */
+    text-align: justify;
+}
+
+
+/* Info table */
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--soft-blue);
+    /* Border tabel lembut dengan nuansa biru muda */
+}
+
+table th {
+    background-color: var(--dark-blue);
+    /* Biru gelap untuk latar belakang header */
+    color: var(--white);
+}
+
+table tr:hover {
+    background-color: var(--light-blue);
+    /* Efek hover dengan latar belakang biru muda */
+}
+
+
+/* Keterampilan */
+
+.skills-section h3 {
+    color: var(--primary-blue);
+    /* Biru untuk judul keterampilan */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.skill-category:last-child {
+    margin-right: 0;
+}
+
+.skill-category h4 {
+    color: var(--text-color);
+    /* Warna teks gelap untuk subjudul */
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.skill-category ul li::before {
+    content: '✔';
+    color: var(--primary-blue);
+    /* Centang biru sesuai dengan tema */
+    font-weight: bold;
+}
+
+
+/* Work experience */
+
+.work-experience {
+    margin-bottom: 30px;
+}
+
+.work-experience h3 {
+    color: var(--primary-blue);
+    /* Biru untuk judul pengalaman kerja */
+    font-size: 1.5rem;
+}
+
+.work-experience ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-item {
+    flex: 1;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Certifications */
+
+.certifications-box {
+    margin-bottom: 30px;
+}
+
+.certification h3 {
+    color: var(--primary-blue);
+    /* Biru untuk judul sertifikasi */
+    font-size: 1.3rem;
+}
+
+
+/* Sosial Media */
+
+.social-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-links h2 {
+    color: var(--primary-blue);
+    /* Biru untuk judul sosial media */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    color: var(--primary-blue);
+    /* Ikon sosial dengan warna biru */
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid var(--primary-blue);
+    /* Border biru untuk ikon sosial */
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-blue);
+    /* Latar belakang biru saat hover */
+    color: var(--white);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .photo-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        margin-bottom: 15px;
+    }
+    .social-icon {
+        margin: 8px 0;
+    }
+    .experience-container {
+        flex-direction: column;
+    }
+}
